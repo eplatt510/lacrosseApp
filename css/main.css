@@ -9,6 +9,13 @@ li {
   font-size: 17px;
 }
 
+ul {
+  height: 500px;
+  width: 600px;
+  overflow-y: scroll;
+  position: relative;
+}
+
 .square {
   width: 30%;
   height: 18px;
@@ -28,10 +35,10 @@ li {
   font-size: 30px;
 }
 
-#container {
+/*#container {
   width: 800px;
   margin: 20px auto;
-}
+}*/
 
 .navbar {
   text-align: center;
@@ -41,7 +48,7 @@ li {
   background: steelblue;
   margin: 0;
   text-transform: uppercase;
-  padding: 10\\8px 0;
+  padding: 8px 0;
 }
 
 #enterTeams {
@@ -105,10 +112,10 @@ li {
    outline: none;
  }
 
- button:hover {
+ /*button:hover {
    color: white;
    /*background: steelblue;*/
- }
+ }*/
 
  /*modal style*/
 
