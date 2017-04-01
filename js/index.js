@@ -211,12 +211,12 @@ penalty.addEventListener("click", function(){
 })
 
 penaltyHome.addEventListener("click", function(){
-  penaltyAgainst = penaltyAgainst.value;
-  penaltyList = penaltyList.value;
-  penaltyTime = penaltyTime.value;
+  penaltyPlayer = penaltyAgainst.value;
+  penaltyText = penaltyList.value;
+  penaltyDuration = penaltyTime.value;
   penaltyModal.style.display = "none";
   // alert("Player " + penaltyAgainst + " of " + team1 + " committed a " + penaltyTime + " penalty for " + penaltyList);
-  appendLi(" | Player " + penaltyAgainst + " of " + team1 + " committed a " + penaltyTime + " penalty for " + penaltyList);
+  appendLi(" | Player " + penaltyPlayer + " of " + team1 + " committed a " + penaltyDuration + " penalty for " + penaltyText);
   penaltyForm.reset();
 })
 
@@ -226,7 +226,7 @@ penaltyAway.addEventListener("click", function(){
   penaltyTime = penaltyTime.value;
   penaltyModal.style.display = "none";
   // alert("Player " + penaltyAgainst + " of " + team2 + " committed a " + penaltyTime + " penalty for " + penaltyList);
-  appendLi(" | Player " + penaltyAgainst + " of " + team2 + " committed a " + penaltyTime + " penalty for " + penaltyList)
+  appendLi(" | Player " + penaltyPlayer + " of " + team2 + " committed a " + penaltyDuration + " penalty for " + penaltyText)
   penaltyForm.reset();
 })
 
@@ -246,12 +246,12 @@ saveHome.addEventListener("click", function(){
   goalieTaker = document.querySelector("#goalieTaker").value;
   goalieModal.style.display = "none";
   // alert(goalieTaker + " of " + team1 + " saved the shot!");
-  appendLi(" | " + goalieTaker + " of " + team1 + " saved the shot!");
+  appendLi(" | Goalie " + goalieTaker + " of " + team1 + " saved the shot!");
 })
 
 saveAway.addEventListener("click", function(){
   goalieTaker = document.querySelector("#goalieTaker").value;
   goalieModal.style.display = "none";
   // alert(goalieTaker + " of " + team2 + " saved the shot!");
-  appendLi(" | " + goalieTaker + " of " + team2 + " saved the shot!");
+  appendLi(" | Goalie " + goalieTaker + " of " + team2 + " saved the shot!");
 })
