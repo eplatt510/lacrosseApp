@@ -33,7 +33,7 @@ li {
   margin: 20px auto;
 }
 
-h1 {
+.navbar {
   text-align: center;
   line-height: 1.1;
   font-weight: normal;
@@ -41,7 +41,7 @@ h1 {
   background: steelblue;
   margin: 0;
   text-transform: uppercase;
-  padding: 20px 0;
+  padding: 10\\8px 0;
 }
 
 #enterTeams {
